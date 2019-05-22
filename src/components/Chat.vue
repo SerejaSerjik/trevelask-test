@@ -145,6 +145,18 @@ export default {
       cursor: pointer;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    .chat-container {
+      width: 100%;
+    }
+    .chat-title, .chat-footer {
+      justify-content: space-between;
+    }
+    .chat-footer .chat-input {
+      width: 100%;
+    }
+  }
 </style>
 
 

@@ -112,9 +112,10 @@ export default {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+    justify-content: center;
     &>div {
       display: flex;
-      flex-basis: 50%;
+      flex-basis: calc(50% - 47px);
     }
     .user-chat {
       border-right: 2px solid #EBE9E4;
@@ -126,6 +127,24 @@ export default {
     .chat-inner {
       display: flex;
       flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .chat-wrapper {
+      flex-direction: column;
+      margin-top: 20px;
+      .user-chat {
+        border: none;
+        padding: 0;
+      }
+      .admin-chat {
+        padding: 0;
+        margin-top: 20px;
+      }
+      .chat-inner {
+        align-items: center;
+      }
     }
   }
 
